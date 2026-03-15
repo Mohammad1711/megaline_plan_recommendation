@@ -1,19 +1,11 @@
 # Megaline Plan Recommendation
 
 ## Project Overview
-This project develops a machine learning model for Megaline, a telecom company. 
-The model analyzes user behavior and recommends the most suitable mobile plan: 
-Smart or Ultra.
+This project develops a machine learning model for Megaline, a telecom company.  
+The model analyzes user behavior and recommends the most suitable mobile plan: **Smart** or **Ultra**.
 
 ## Objective
-Build a classification model with accuracy higher than 0.75.
-
-## Dataset
-The dataset contains monthly behavior information about users including:
-- number of calls
-- call duration in minutes
-- number of messages
-- internet usage (MB)
+Build a classification model that predicts the best plan for users with accuracy greater than **0.75**.
 
 ## Tools and Libraries
 - Python
@@ -25,15 +17,27 @@ The dataset contains monthly behavior information about users including:
 ## Project Workflow
 1. Load and explore the dataset
 2. Split the data into training, validation, and test sets
-3. Train multiple models
+3. Train multiple machine learning models
 4. Compare model performance
 5. Select the best model
-6. Test the final model
+6. Evaluate the final model on the test set
 
-## Final Result
-The Random Forest model achieved the best performance with accuracy around **0.81**, which exceeds the required threshold of **0.75**.
+## Results
+The best performing model was **Random Forest**.
 
-## Files in this Repository
-- `megaline_plan_recommendation.ipynb` – main notebook
-- `users_behavior.csv` – dataset
-- `project_description.pdf` – assignment description
+Model accuracy on the test set: **0.81**
+
+This exceeds the required accuracy threshold of **0.75**.
+
+## Project Structure
+
+```
+megaline-plan-recommendation
+│
+├── megaline_plan_recommendation.ipynb   # main machine learning notebook
+├── users_behavior.csv                   # dataset
+├── Project_Description.pdf              # assignment description
+├── README.md                            # project documentation
+├── LICENSE
+└── .gitignore
+```
